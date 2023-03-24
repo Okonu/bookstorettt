@@ -1,12 +1,12 @@
 <?php
 ob_start();
-ini_set('date.timezone','Africa/Nairobi');
-date_default_timezone_set('Africa/Nairobi');
+ini_set('date.timezone','Asia/Manila');
+date_default_timezone_set('Asia/Manila');
 session_start();
 
 require_once('initialize.php');
-require_once('controllers/DBConnection.php');
-require_once('controllers/SystemSettings.php');
+require_once('classes/DBConnection.php');
+require_once('classes/SystemSettings.php');
 $db = new DBConnection;
 $conn = $db->conn;
 
@@ -31,7 +31,8 @@ function isMobileDevice(){
         '/iphone/i' => 'iPhone', 
         '/ipod/i' => 'iPod', 
         '/ipad/i' => 'iPad', 
-        '/android/i' => 'Android',  
+        '/android/i' => 'Android', 
+        '/blackberry/i' => 'BlackBerry', 
         '/webos/i' => 'Mobile'
     );
 
@@ -45,3 +46,4 @@ function isMobileDevice(){
     return false;
 }
 ob_end_flush();
+?>
