@@ -1,16 +1,16 @@
- #BOOKSTORE
+ # BOOKSTORE
 
 This is the codesource for BOOKSTORE. An online e-commerce for books. 
 
-#Stack
+# Stack
 
 PHP, MySQL, Bootstrap JavaScript, HTML, Ajax, JQuery,
 
-#payment processing
+# payment processing
 - Paypal
 - Cash on delivery
 
-#Installation and Use
+# Installation and Use
 To use and demo;
 1. Download xampp/wampp
 2. Clone the repository or download the zip file
@@ -24,14 +24,14 @@ To use and demo;
 - username: admin
 - password:admin123
 
-#Features;
-##The system contains admin and user section
+# Features;
+## The system contains admin and user section
 
-User;
+## User;
 - Needs to create account inorder to complete purchase and checkout
 - can checkout using paypal
 
-Admin;
+## Admin;
 - Can add or delete; categories of books, books,
 - can view inventory list
 - view orders
